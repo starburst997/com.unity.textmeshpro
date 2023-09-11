@@ -4552,13 +4552,14 @@ namespace TMPro
 
         void SetTextComponentWrapMode()
         {
-            if (m_TextComponent == null)
+            // JD: Add some unpleasant blob at the end, not sure if introduce since 3.2+ ? Anyway better to simply use whataver value the user set to the underlying text object
+            /*if (m_TextComponent == null)
                 return;
 
             if (multiLine)
                 m_TextComponent.textWrappingMode = TextWrappingModes.Normal;
             else
-                m_TextComponent.textWrappingMode = TextWrappingModes.PreserveWhitespaceNoWrap;
+                m_TextComponent.textWrappingMode = TextWrappingModes.PreserveWhitespaceNoWrap;*/
         }
 
         // Control Rich Text option on the text component.
