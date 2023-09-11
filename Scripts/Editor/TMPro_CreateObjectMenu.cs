@@ -336,6 +336,7 @@ namespace TMPro.EditorUtilities
 
         private static void CreateEventSystem(bool select, GameObject parent)
         {
+#if UNITY_2021_3_OR_NEWER
             var esys = Object.FindFirstObjectByType<EventSystem>();
             if (esys == null)
             {
@@ -351,6 +352,7 @@ namespace TMPro.EditorUtilities
             {
                 Selection.activeGameObject = esys.gameObject;
             }
+#endif
         }
 
 
